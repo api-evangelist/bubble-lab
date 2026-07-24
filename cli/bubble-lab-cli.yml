@@ -1,0 +1,36 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/package/create-bubblelab-app
+docs: https://docs.bubblelab.ai/intro
+name: create-bubblelab-app
+summary: >-
+  First-party scaffolding CLI for the Bubble Lab agentic workflow framework.
+  Bootstraps a fully-typed BubbleLab TypeScript project (core packages +
+  runtime installed) from a chosen starter template, ready to run locally and
+  fully self-hostable.
+binary: create-bubblelab-app
+package: create-bubblelab-app
+license: Apache-2.0
+official: true
+install:
+- npx create-bubblelab-app
+- npm create bubblelab-app
+- pnpm create bubblelab-app
+- yarn create bubblelab-app
+flow:
+- prompt: project name
+- prompt: choose a template (basic, reddit-scraper, weather-agent)
+- action: scaffolds TypeScript config, example BubbleFlow, dependencies, and .env.example
+run_project:
+- cd <project>
+- npm install
+- cp .env.example .env   # add API keys (e.g. Google Gemini, Firecrawl)
+- npm run dev
+requirements:
+- Node.js 18+
+- A Google Gemini API key (free tier available)
+- A Firecrawl API key (for web-search/tool bubbles)
+templates:
+- name: basic
+- name: reddit-scraper
+- name: weather-agent

@@ -1,7 +1,17 @@
 aid: bubble-lab
 name: Bubble Lab
-description: Bubble Lab is a company surfaced as a portfolio company of y-combinator and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Bubble Lab is an open-core, agentic workflow automation platform built for
+  developers. Its open-source (Apache-2.0) TypeScript engine lets you compose AI
+  agents and integrations as typed, composable units called "Bubbles" — service
+  bubbles (Slack, Gmail, PostgreSQL, Google Sheets, Airtable, ElevenLabs, Resend,
+  and more) and tool bubbles (web scraping, research agents, SQL, LinkedIn,
+  Reddit, YouTube) — then stitches them into production-grade "BubbleFlow"
+  pipelines with end-to-end type safety, built-in logging, tracing, and
+  step-level observability. Workflows are fully runnable, self-hostable, and
+  exportable to your own backend, or authored visually in the hosted Bubble
+  Studio. Scaffold a project in seconds with the create-bubblelab-app CLI.
+  Backed by Y Combinator (W26).
 url: https://raw.githubusercontent.com/api-evangelist/bubble-lab/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +19,73 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://communities.bubblelab.ai/hero-poster.jpg
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
-- Company
+- Workflow Automation
+- AI Agents
+- Agentic Workflows
+- Integrations
+- Developer Tools
+- TypeScript
+- Open Source
+- Automation
+- SDK
+- Low-Code
 apis: []
+common:
+- type: DomainSecurity
+  url: security/bubble-lab-domain-security.yml
+- type: Website
+  url: https://bubblelab.ai/
+- type: DeveloperPortal
+  url: https://docs.bubblelab.ai/
+- type: Documentation
+  url: https://docs.bubblelab.ai/intro
+- type: APIReference
+  url: https://docs.bubblelab.ai/bubbles/overview
+- type: GettingStarted
+  url: https://docs.bubblelab.ai/intro
+- type: GitHubOrganization
+  url: https://github.com/bubblelabai
+- type: SourceCode
+  url: https://github.com/bubblelabai/BubbleLab
+- type: SignUp
+  url: https://app.bubblelab.ai
+- type: Support
+  url: mailto:hello@bubblelab.ai
+- type: TermsOfService
+  url: https://bubblelab.ai/terms
+- type: PrivacyPolicy
+  url: https://bubblelab.ai/privacy
+- type: Packages
+  url: packages/bubble-lab-packages.yml
+- type: SDKs
+  url: packages/bubble-lab-packages.yml
+- type: CLI
+  url: cli/bubble-lab-cli.yml
+- type: LLMsTxt
+  url: llms/bubble-lab-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,56 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/search?q=bubblelab
+notes: >-
+  First-party client libraries for the Bubble Lab open-core workflow engine,
+  all published under the @bubblelab npm scope from the bubblelabai/BubbleLab
+  monorepo (repository + homepage point at github.com/bubblelabai/BubbleLab,
+  license Apache-2.0 © Bubble Lab, Inc.). No PyPI, Maven, NuGet, Go, RubyGems,
+  Packagist, or crates.io packages were found — Bubble Lab is TypeScript/Node
+  only.
+packages:
+- language: typescript
+  registry: npm
+  name: "@bubblelab/bubble-core"
+  url: https://www.npmjs.com/package/@bubblelab/bubble-core
+  install: npm install @bubblelab/bubble-core
+  version: 0.1.324
+  license: Apache-2.0
+  official: true
+  role: Core SDK — the Bubbles and BubbleFlow primitives.
+- language: typescript
+  registry: npm
+  name: "@bubblelab/bubble-runtime"
+  url: https://www.npmjs.com/package/@bubblelab/bubble-runtime
+  install: npm install @bubblelab/bubble-runtime
+  version: 0.1.324
+  license: Apache-2.0
+  official: true
+  role: Durable, replayable, self-hostable execution runtime for BubbleFlows.
+- language: typescript
+  registry: npm
+  name: "@bubblelab/shared-schemas"
+  url: https://www.npmjs.com/package/@bubblelab/shared-schemas
+  install: npm install @bubblelab/shared-schemas
+  version: 0.1.324
+  license: Apache-2.0
+  official: true
+  role: Shared Zod schemas and TypeScript types used across the runtime and SDK.
+- language: typescript
+  registry: npm
+  name: "@bubblelab/ts-scope-manager"
+  url: https://www.npmjs.com/package/@bubblelab/ts-scope-manager
+  install: npm install @bubblelab/ts-scope-manager
+  version: 0.1.324
+  license: MIT
+  official: true
+  role: TypeScript scope-analysis helper used by the Bubble Lab toolchain.
+- language: typescript
+  registry: npm
+  name: create-bubblelab-app
+  url: https://www.npmjs.com/package/create-bubblelab-app
+  install: npm create bubblelab-app
+  version: 0.1.324
+  license: Apache-2.0
+  official: true
+  role: Project scaffolder / CLI (see cli/bubble-lab-cli.yml for the command surface).
