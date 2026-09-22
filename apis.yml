@@ -47,6 +47,9 @@ image: https://communities.bubblelab.ai/hero-poster.jpg
 specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
+x-docs-platform: docusaurus
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-09-21
 tags:
 - Workflow-Automation
 - AI Agents
