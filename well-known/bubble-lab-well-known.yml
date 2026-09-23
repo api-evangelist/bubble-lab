@@ -2,19 +2,24 @@ generated: '2026-07-18'
 method: searched
 source: live probes of https://bubblelab.ai/.well-known/*
 host: https://bubblelab.ai
-notes: >-
-  Probed the standard /.well-known/ discovery surface on the primary host. None
-  are published (all 404). Recorded as an honest negative so re-runs do not
-  re-probe blindly; no WellKnown/SecurityTxt pointer is wired because nothing
-  returned 200.
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
+notes: Probed the standard /.well-known/ discovery surface on the primary host. None are published (all
+  404). Recorded as an honest negative so re-runs do not re-probe blindly; no WellKnown/SecurityTxt pointer
+  is wired because nothing returned 200.
+hosts:
+- host: https://bubblelab.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
