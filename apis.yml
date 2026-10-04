@@ -51,13 +51,13 @@ x-docs-platform: docusaurus
 x-docs-platform-confidence: medium
 x-docs-platform-checked: 2026-09-21
 tags:
-- Workflow-Automation
+- Workflow Automation
 - AI Agents
 - Agentic Workflows
 - Integration
 - Developer Tools
 - TypeScript
-- Open-Source
+- Open Source
 - Automation
 - SDK
 - Low-Code
@@ -72,6 +72,8 @@ tags_raw:
 - Automation
 - SDK
 - Low-Code
+- Workflow-Automation
+- Open-Source
 apis: []
 common:
 - type: IssueTracker
